@@ -1,5 +1,10 @@
 # InstagramLikeColorTransitionAndroid
 
+How to create instagram like Gradient color transition in android.
+
+<img src="https://github.com/Taishi-Y/Scribd/blob/master/images/screenshot.png?raw=true" 
+alt="" width="180" border="10" />
+
 #### 1. Create some gradient color drawables inside drawable Folder.
 color1.xml
 
