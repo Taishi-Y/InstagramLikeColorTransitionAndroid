@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
 		LinearLayout container = (LinearLayout) findViewById(R.id.container);
 
 		anim = (AnimationDrawable) container.getBackground();
-		anim.setEnterFadeDuration(6000);
-		anim.setExitFadeDuration(2000);
+		anim.setEnterFadeDuration(3000);
+		anim.setExitFadeDuration(1000);
 	}
 
 	@Override
