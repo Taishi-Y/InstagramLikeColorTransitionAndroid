@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
 
 ```xml 
 <activity  
-    android:name=".SplashActivity"  
+    android:name=".MainActivity"  
     android:theme="@style/Theme.AppTheme.TranslucentStatusBar" /> 
 ```
 
