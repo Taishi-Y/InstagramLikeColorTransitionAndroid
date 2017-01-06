@@ -6,10 +6,10 @@ color1.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-<gradient
-    android:startColor="#c44e4e"
-    android:endColor="#dcb9b9"
-    android:angle="0"/>
+    <gradient
+        android:startColor="#c44e4e"
+        android:endColor="#dcb9b9"
+        android:angle="0"/>
 </shape>
 
 ```
@@ -36,11 +36,11 @@ color3.xml
         android:endColor="#44c74b"
         android:angle="90"/>
 </shape>
-````
+```
 
 color4.xml
 
-````xml
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
@@ -48,11 +48,10 @@ color4.xml
         android:endColor="#d46cb3"
         android:angle="135"/>
 </shape>
-````
+```
     
 #### 2. Create animation list using the above created gradient colors, animation_list.xml, inside drawable folder
 ```xml
-
 <?xml version="1.0" encoding="utf-8"?>
 <animation-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item
