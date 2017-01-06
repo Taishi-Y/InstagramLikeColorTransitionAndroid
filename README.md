@@ -1,4 +1,4 @@
-# InstagramLikeColorTransitionAndroid
+# InstagramLikeColorTransition
 
 How to create instagram like Gradient color transition in android.
 
