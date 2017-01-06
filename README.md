@@ -7,8 +7,8 @@ color1.xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
-        android:startColor="#c44e4e"
-        android:endColor="#dcb9b9"
+        android:startColor="#614385"
+        android:endColor="#516395"
         android:angle="0"/>
 </shape>
 
@@ -21,8 +21,8 @@ color2.xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
-        android:startColor="#680b0b"
-        android:endColor="#c6b147"
+        android:startColor="#5f2c82"
+        android:endColor="#49a09d"
         android:angle="45"/>
 </shape>
 ```
@@ -32,8 +32,8 @@ color3.xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
-        android:startColor="#57caa8"
-        android:endColor="#44c74b"
+        android:startColor="#4776E6"
+        android:endColor="#8E54E9"
         android:angle="90"/>
 </shape>
 ```
