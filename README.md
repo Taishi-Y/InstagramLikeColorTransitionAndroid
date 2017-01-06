@@ -1,31 +1,21 @@
 # InstagramLikeColorTransitionAndroid
 
-<<<<<<< HEAD
-##### 1. Create some gradient color drawables inside drawable Folder.
-=======
 How to create instagram like Gradient color transition in android.
 
-<img src="https://github.com/Taishi-Y/Scribd/blob/master/images/screenshot.png?raw=true" 
-alt="" width="180" border="10" />
+<img src="https://github.com/Taishi-Y/InstagramLikeColorTransitionAndroid/blob/master/images/screenshot.gif?raw=true" 
+alt="" width="250" border="10" />
 
 #### 1. Create some gradient color drawables inside drawable Folder.
->>>>>>> 939d6616a5a90b239fb2c0d2300cb6c6fbf3d2f6
+
 color1.xml
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-<<<<<<< HEAD
-<gradient
-    android:startColor="#c44e4e"
-    android:endColor="#dcb9b9"
-    android:angle="0"/>
-=======
     <gradient
         android:startColor="#614385"
         android:endColor="#516395"
         android:angle="0"/>
->>>>>>> 939d6616a5a90b239fb2c0d2300cb6c6fbf3d2f6
 </shape>
 
 ```
@@ -37,13 +27,8 @@ color2.xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
-<<<<<<< HEAD
-        android:startColor="#680b0b"
-        android:endColor="#c6b147"
-=======
         android:startColor="#5f2c82"
         android:endColor="#49a09d"
->>>>>>> 939d6616a5a90b239fb2c0d2300cb6c6fbf3d2f6
         android:angle="45"/>
 </shape>
 ```
@@ -53,27 +38,16 @@ color3.xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
-<<<<<<< HEAD
-        android:startColor="#57caa8"
-        android:endColor="#44c74b"
-        android:angle="90"/>
-</shape>
-````
-
-color4.xml
-
-````xml
-=======
         android:startColor="#4776E6"
         android:endColor="#8E54E9"
         android:angle="90"/>
 </shape>
 ```
 
+
 color4.xml
 
 ```xml
->>>>>>> 939d6616a5a90b239fb2c0d2300cb6c6fbf3d2f6
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
@@ -81,25 +55,27 @@ color4.xml
         android:endColor="#d46cb3"
         android:angle="135"/>
 </shape>
-<<<<<<< HEAD
-````
+```
     
 ##### Create animation list using the above created gradient colors, animation_list.xml, inside drawable folder
-    <?xml version="1.0" encoding="utf-8"?>
-    <animation-list xmlns:android="http://schemas.android.com/apk/res/android">
-        <item
-            android:drawable="@drawable/color1"
-            android:duration="10000" />
-        <item
-            android:drawable="@drawable/color2"
-            android:duration="10000" />
-        <item
-            android:drawable="@drawable/color3"
-            android:duration="10000" />
-        <item
-            android:drawable="@drawable/color4"
-            android:duration="10000" />
-    </animation-list>
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/color1"
+        android:duration="10000" />
+    <item
+        android:drawable="@drawable/color2"
+        android:duration="10000" />
+    <item
+        android:drawable="@drawable/color3"
+        android:duration="10000" />
+    <item
+        android:drawable="@drawable/color4"
+        android:duration="10000" />
+</animation-list>
+```
     
 3. Apply the animation_list created above as a background to the top view of your activity layout.
     <?xml version="1.0" encoding="utf-8"?>
@@ -263,4 +239,4 @@ public class MainActivity extends AppCompatActivity {
     android:name=".SplashActivity"  
     android:theme="@style/Theme.AppTheme.TranslucentStatusBar" /> 
 ```
->>>>>>> 939d6616a5a90b239fb2c0d2300cb6c6fbf3d2f6
+
