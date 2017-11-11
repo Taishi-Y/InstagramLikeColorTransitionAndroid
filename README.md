@@ -52,7 +52,7 @@ color4.xml
         android:angle="135"/>
 </shape>
 ```
-    
+
 #### 2. Create animation list using the above created gradient colors, animation_list.xml, inside drawable folder
 
 ```xml
@@ -72,7 +72,7 @@ color4.xml
         android:duration="10000" />
 </animation-list>
 ```
-    
+
 #### 3. Apply the animation_list created above as a background to the top view of your activity layout.
 
 ```xml
@@ -89,7 +89,7 @@ color4.xml
 
 </LinearLayout>
 ```
-    
+
 #### 4. Inside your activity use AnimationDrawable to apply the transition.
 ```java
 LinearLayout container = (LinearLayout) findViewById(R.id.container);
@@ -114,7 +114,7 @@ protected void onPause() {
         anim.stop();
 }
 ```
-  
+
 
 ### Make statusbar transparent
 
@@ -126,7 +126,7 @@ values/styles.xml
 ```
 
 
-values-19/styles.xml
+values-v19/styles.xml
 ```xml
 <resources>  
     <style name="Theme.AppTheme.TranslucentStatusBar" parent="Theme.AppCompat.Light.NoActionBar">  
@@ -189,9 +189,9 @@ public class MainActivity extends AppCompatActivity {
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
-
+    
        http://www.apache.org/licenses/LICENSE-2.0
-
+    
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
