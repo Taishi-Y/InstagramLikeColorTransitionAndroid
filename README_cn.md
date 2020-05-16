@@ -1,13 +1,12 @@
 # InstagramLikeColorTransition
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-InstagramLikeColorTransition-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5035)
 
-How to create instagram like Gradient color transition in android.
+在Android中创建类似Instagram的渐变背景
 
 <img src="https://github.com/Taishi-Y/InstagramLikeColorTransitionAndroid/blob/master/images/screenshot.gif?raw=true" 
 alt="" width="250" border="10" />
 
-#### 1. Create some gradient color drawables inside drawable Folder.
-
+#### 1. 在drawable文件夹创建一些渐变颜色的资源
 color1.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -53,8 +52,7 @@ color4.xml
 </shape>
 ```
 
-#### 2. Create animation list using the above created gradient colors, animation_list.xml, inside drawable folder
-
+#### 2. 创建一个用到上面创建的渐变色的动画序列，命名为animation_list.xml,放进去drawable文件夹
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <animation-list xmlns:android="http://schemas.android.com/apk/res/android">
@@ -73,8 +71,7 @@ color4.xml
 </animation-list>
 ```
 
-#### 3. Apply the animation_list created above as a background to the top view of your activity layout.
-
+#### 3. 将上面已经创建好的动画序列应用到你layout的背景顶层的view中
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -90,7 +87,7 @@ color4.xml
 </LinearLayout>
 ```
 
-#### 4. Inside your activity use AnimationDrawable to apply the transition.
+#### 4.在你的activity中用AnimationDrawable去实现过渡效果
 ```java
 LinearLayout container = (LinearLayout) findViewById(R.id.container);
 
@@ -98,7 +95,7 @@ AnimationDrawable anim = (AnimationDrawable) container.getBackground();
 anim.setEnterFadeDuration(6000);
 anim.setExitFadeDuration(2000);
 
-// Starting animation:- start the animation on onResume.
+// 开始播放动画：在onResume方法中开始播放渐变动画
 @Override
 protected void onResume() {
     super.onResume();
@@ -106,7 +103,7 @@ protected void onResume() {
         anim.start();
 }
       
-// Stopping animation:- stop the animation on onPause.
+// 停止播放动画：在onPause方法中停止播放渐变动画
 @Override
 protected void onPause() {
     super.onPause();
@@ -115,8 +112,7 @@ protected void onPause() {
 }
 ```
 
-
-### Make statusbar transparent
+### 将状态栏设置透明（去除状态栏）
 
 values/styles.xml
 ```xml
@@ -164,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {  
         super.onCreate(savedInstanceState);  
   
-        // Add below code
+        // 加入下面的代码
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {  
             findViewById(android.R.id.content).setSystemUiVisibility(  
                     View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);  
