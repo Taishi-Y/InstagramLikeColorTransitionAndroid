@@ -1,5 +1,8 @@
 # InstagramLikeColorTransition
+
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-InstagramLikeColorTransition-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5035)
+
+[中文版](https://github.com/Taishi-Y/InstagramLikeColorTransitionAndroid/blob/master/README_cn.md) by [zhaoweih](https://github.com/zhaoweih)
 
 How to create instagram like Gradient color transition in android.
 
